@@ -1,0 +1,29 @@
+.layout-container {
+  display: flex;
+  flex: auto;
+  height: 100%;
+}
+.layout-container-vertical {
+  flex-direction: column;
+}
+
+.layout-aside,
+.layout-header,
+.layout-footer {
+  flex: none;
+}
+.layout-main {
+  flex: auto;
+}
+
+.layout-main,
+.layout-aside {
+  overflow: auto;
+}
+
+.layout-container-tile {
+  .layout-main,
+  .layout-aside {
+    overflow: visible;
+  }
+}
